@@ -14,6 +14,8 @@ step1: read some relevant paper
 >>> 机器学习聚类算法
 >>>
 >>> K-Means算法及其优化
+>>>
+>>> 权值软分配K-Means
 >
 > 制造精度检测
 >
