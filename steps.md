@@ -25,3 +25,5 @@ step1: read some relevant paper
 >> 
 
 step2: list the outline
+
+step3: 完成摘要(参考文献)
