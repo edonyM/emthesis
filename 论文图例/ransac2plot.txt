@@ -1,0 +1,5 @@
+http://stanford.edu/~mwaskom/software/seaborn/examples/grouped_violinplots.html
+
+http://stanford.edu/~mwaskom/software/seaborn/examples/horizontal_boxplot.html
+
+http://stanford.edu/~mwaskom/software/seaborn/examples/regression_marginals.html
