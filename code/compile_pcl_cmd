@@ -1,0 +1,5 @@
+CMD1:
+g++ stat_filter.cpp -o sf -I/usr/include/pcl-1.7 -I/usr/include/eigen3 -L/usr/lib64 -I/usr/boost -lboost_system -lpcl_io -lpcl_common -lpcl_filters
+
+CMD2:
+g++ read_points2pcd.cpp -o r2p -I/usr/include/pcl-1.7 -I/usr/include/eigen3 -lpcl_io -lboost_system -lpcl_common
