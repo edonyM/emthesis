@@ -96,7 +96,6 @@ for line in filebuf.readlines():
     tmp = [float(line[0]), float(line[1]), float(line[2])]
     points.append(tmp)
 points = np.array(points)
-print points.shape
 bandwidth = estimate_bandwidth(points, quantile=0.1)
 ms = MeanShift(bandwidth, bin_seeding=True)
 ms.fit(points)
@@ -105,7 +104,22 @@ centers = ms.cluster_centers_
 
 labels_unique = np.unique(labels)
 n_clusters_ = len(labels_unique)
-print(labels)
+
+wfiles = []
+for i in range(n_clusters_):
+    filename = 'file'
+    filename += str(i)
+    filename += '.sp'
+    wfiles.append(filename)
+
+filebuf = []
+for f in wfiles:
+    file = open(f,'w+')
+    filebuf.append(file)
+
+for l, p in zip(labels, points):
+    filebuf[l].write('%d %d %d\n'%(p[0], p[1], p[2]))
+
 
 #plt.figure(1)
 #plt.clf()
