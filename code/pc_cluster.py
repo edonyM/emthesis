@@ -88,8 +88,11 @@ class PyColor(object):
 
 from sklearn.cluster import MeanShift, estimate_bandwidth
 from itertools import cycle
+import sys
 
-filebuf = open('point_cluster.xyz')
+filename = sys.argv[1]
+print filename
+filebuf = open(filename)
 points = []
 for line in filebuf.readlines():
     line = line.rstrip().split()
